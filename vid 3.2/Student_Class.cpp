@@ -6,18 +6,12 @@ class Student
     public:
         string name;
         unsigned int id;
-        char grades[64];
         float gpa;
 
         Student()
         {
             name = "Empty";
             id = 0;
-            
-            //set grades to 0
-            for(int i=0; i<sizeof(grades) / sizeof(char); i++)
-                grades[i] = 0;
-            
             gpa = 0;
         }
         Student(string studentName, unsigned int studentID, float studentGPA)

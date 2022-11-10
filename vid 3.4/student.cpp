@@ -85,7 +85,8 @@ double Student::getGPA()
 }
 void Student::Identify()
 {
-    std::cout << "Name: " << getName() <<" ID: " << getID() << " GPA: " << getGPA() << '\n'; 
+    std::cout << "Name: " << getName() <<" ID: " << getID() << " GPA: " << getGPA() << '\n';
+    print_class_schedule();
 }
 void Student::print_class_schedule()
 {
@@ -93,6 +94,7 @@ void Student::print_class_schedule()
     {
         std::cout<<i<<", ";
     }
+    std::cout << '\n';
 }
 
 Student::Student()
